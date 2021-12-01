@@ -1,0 +1,25 @@
+main.album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > section {
+    max-width: $max_with2;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  > section.image {
+    max-width: $max_with2;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    display: flex;
+
+    > img {
+      height: 150px;
+      float: left;
+    }
+  }
+}

@@ -16,73 +16,75 @@
         <a class="active" href="reservation.html">Réservation</a>
       </nav>
     </header>
-    <main>
+    <main class="reserv">
       <aside>
         <a href="https://twitter.com"><i class="icofont-twitter"></i></a>
         <a href="https://facbook.com"><i class="icofont-facebook"></i></a>
         <a href="https://instagram.com"><i class="icofont-instagram"></i></a>
       </aside>
-      <section>
+      <section class="date">
         <h1>Les Dates</h1>
         <div>
-          <img src="#" alt="Orelsan_en_concert" />
-          <h2>Contact</h2>
-          <a href="tel:+498245256">O498/245.256</a>
-          <a href="mailto:info@orelsan7th.com">info@orelsan7th.com</a>
+          <article>
+            <img src="img/orelsan-reservatio.jpg" alt="Orelsan_en_concert" />
+            <h2>Contact</h2>
+            <a href="tel:+498245256">O498/245.256</a>
+            <a href="mailto:info@orelsan7th.com">info@orelsan7th.com</a>
+          </article>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Ville</th>
+                <th scope="col">Disponibilités</th>
+                <th scope="col">Réservation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>21 janvier 2018</td>
+                <td>Paris</td>
+                <td>oui</td>
+                <td class="btn">Tickets</td>
+              </tr>
+              <tr>
+                <td>25 janvier 2018</td>
+                <td>Bruxelles</td>
+                <td>oui</td>
+                <td class="btn">Tickets</td>
+              </tr>
+              <tr>
+                <td>8 fevrier 2018</td>
+                <td>Lille</td>
+                <td>non</td>
+                <td class="btn">Tickets</td>
+              </tr>
+              <tr>
+                <td>9 fevrier 2018</td>
+                <td>Caen</td>
+                <td>oui</td>
+                <td class="btn">Tickets</td>
+              </tr>
+              <tr>
+                <td>12 février 2018</td>
+                <td>Marseille</td>
+                <td>oui</td>
+                <td class="btn">Tickets</td>
+              </tr>
+              <tr>
+                <td>14 février 2018</td>
+                <td>Toulouse</td>
+                <td>oui</td>
+                <td class="btn">Tickets</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <table>
-          <thead>
-            <tr>
-              <th scope="col">Date</th>
-              <th scope="col">Ville</th>
-              <th scope="col">Disponibilités</th>
-              <th scope="col">Réservation</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>21 janvier 2018</td>
-              <td>Paris</td>
-              <td>oui</td>
-              <td class="tickets">Tickets</td>
-            </tr>
-            <tr>
-              <td>25 janvier 2018</td>
-              <td>Bruxelles</td>
-              <td>oui</td>
-              <td class="tickets">Tickets</td>
-            </tr>
-            <tr>
-              <td>8 fevrier 2018</td>
-              <td>Lille</td>
-              <td>non</td>
-              <td class="tickets">Tickets</td>
-            </tr>
-            <tr>
-              <td>9 fevrier 2018</td>
-              <td>Caen</td>
-              <td>oui</td>
-              <td class="tickets">Tickets</td>
-            </tr>
-            <tr>
-              <td>12 février 2018</td>
-              <td>Marseille</td>
-              <td>oui</td>
-              <td class="tickets">Tickets</td>
-            </tr>
-            <tr>
-              <td>14 février 2018</td>
-              <td>Toulouse</td>
-              <td>oui</td>
-              <td class="tickets">Tickets</td>
-            </tr>
-          </tbody>
-        </table>
       </section>
       <section>
         <h1>Réservation</h1>
+        <h3 class="reservation">Coordonnées</h3>
         <form action="#" method="post">
-          <h3 class="reservation">Coordonnées</h3>
           <label for="name_fld">Nom*</label>
           <input
             required="required"
@@ -111,8 +113,8 @@
           <label for="phone_fld">Téléphone</label>
           <input type="tel" name="phone_fld" id="phone_fld" />
         </form>
+        <h3 class="reservation">Votre Ticket</h3>
         <form action="#" method="post">
-          <h3 class="reservation">Votre Ticket</h3>
           <label for="ville_fld">Ville*</label>
 
           <select required="required" name="city_fld" id="city_fld">
@@ -143,8 +145,8 @@
             min="0"
           />
         </form>
+        <h3 class="reservation">Créer un compte</h3>
         <form action="#" method="post">
-          <h3 class="reservation">Créer un compte</h3>
           <label for="login_fld">Login</label>
           <input type="text" name="login_fld" id="login_fld" />
 
@@ -153,8 +155,8 @@
         </form>
       </section>
 
-      <button type="cancel" class="btn">Annuler</button>
-      <button type="Submit" class="btn">Commander</button>
+      <button type="cancel" class="btn_form">Annuler</button>
+      <button type="Submit" class="btn_form">Commander</button>
     </main>
 
     <footer>

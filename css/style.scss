@@ -1,8 +1,12 @@
-$max_with: 980px; // max with
-$max_with2: 1440px; // max with
+$max_with1: 980px; // max with 980px
+$max_with2: 1440px; // max with 1440px
+$color_red: rgb(160, 11, 11); // red
+
 @import "_header.scss";
 @import "_footer.scss";
 @import "_reservation.scss";
+@import "_index.scss";
+@import "_album.scss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500;700&display=swap");
 
 :root {
@@ -24,7 +28,7 @@ body {
     font-size: 1.5em;
   }
   h3 {
-    color: rgb(211, 28, 28);
+    color: $color_red;
     font-family: "Montserrat";
     font-weight: normal;
     text-transform: uppercase;
@@ -40,12 +44,30 @@ body {
     font-family: "Montserrat";
     font-weight: normal;
   }
+  p {
+    font-family: "Montserrat";
+    font-weight: normal;
+  }
 }
 
 //ASSIDE
 main {
   aside {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 10vh;
+    right: 0;
     a {
+      margin: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border-radius: 100vh;
+      height: 5vh;
+      width: 5vh;
+      font-size: 1.5em;
       text-decoration: none;
       i {
         color: black;

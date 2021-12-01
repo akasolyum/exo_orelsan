@@ -1,6 +1,6 @@
 body {
   footer {
-    margin-top: 10ch;
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
     background-color: grey;
@@ -16,12 +16,24 @@ body {
         max-width: $max_with2;
         justify-content: center;
         flex-direction: column;
+        h1 {
+          color: white;
+        }
         a {
           display: flex;
           flex-direction: column;
           text-align: center;
           text-decoration: none;
           color: white;
+        }
+        ul {
+          li {
+            text-align: center;
+            list-style: none;
+            color: white;
+            font-family: "Montserrat";
+            font-weight: normal;
+          }
         }
       }
     }
