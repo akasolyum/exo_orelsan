@@ -1,0 +1,29 @@
+body {
+  footer {
+    margin-top: 10ch;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    div {
+      max-width: $max_with2;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      section {
+        display: flex;
+        gap: 2vh;
+        max-width: $max_with2;
+        justify-content: center;
+        flex-direction: column;
+        a {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
