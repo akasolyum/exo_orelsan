@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>reservation</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="Index.html"> Accueil</a>
+        <a href="album.html">Les albums</a>
+        <a href="reservation.html">Réservation</a>
+      </nav>
+    </header>
+    <aside>
+      <a href="www.instagram.com"></a>
+      <a href="www.twitter.com"></a>
+      <a href="www.facbook.com"></a>
+    </aside>
+    <main>
+      <section>
+        <h1>Les Dates</h1>
+        <div>
+          <img src="#" alt="Orelsan_en_concert" />
+          <h2>Contact</h2>
+          <a href="tel:+498245256">O498/245.256</a>
+          <a href="mailto:info@orelsan7th.com">info@orelsan7th.com</a>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Ville</th>
+              <th scope="col">Disponibilités</th>
+              <th scope="col">Réservation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>21 janvier 2018</td>
+              <td>Paris</td>
+              <td>oui</td>
+              <td>Tickets</td>
+            </tr>
+            <tr>
+              <td>25 janvier 2018</td>
+              <td>Bruxelles</td>
+              <td>oui</td>
+              <td>Tickets</td>
+            </tr>
+            <tr>
+              <td>8 fevrier 2018</td>
+              <td>Lille</td>
+              <td>non</td>
+              <td>Tickets</td>
+            </tr>
+            <tr>
+              <td>9 fevrier 2018</td>
+              <td>Caen</td>
+              <td>oui</td>
+              <td>Tickets</td>
+            </tr>
+            <tr>
+              <td>12 février 2018</td>
+              <td>Marseille</td>
+              <td>oui</td>
+              <td>Tickets</td>
+            </tr>
+            <tr>
+              <td>14 février 2018</td>
+              <td>Toulouse</td>
+              <td>oui</td>
+              <td>Tickets</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h1>Réservation</h1>
+        <form action="#" method="post">
+          <h2>Coordonnées</h2>
+          <label for="name_fld">Nom</label>
+          <input type="text" name="name_fld" id="name_fld" />
+
+          <label for="first_name_fld">Prénom</label>
+          <input type="text" name="first_name_fld" id="first_name_fld" />
+
+          <label for="mail_fld">E-mail</label>
+          <input
+            type="email"
+            name="mail_fld"
+            id="mail_fld"
+            placeholder="me@domaine.be"
+          />
+
+          <label for="phone_fld">Téléphone</label>
+          <input type="tel" name="phone_fld" id="phone_fld" />
+        </form>
+        <form action="#" method="post">
+          <h2>Votre Ticket</h2>
+          <label for="ville_fld">Ville</label>
+
+          <select name="city_fld" id="city_fld">
+            <option value="Paris">Paris</option>
+            <option value="Bruxelles">Bruxelles</option>
+            <option value="Lille">Lille</option>
+            <option value="Caen">Caen</option>
+            <option value="Marseille">Marseille</option>
+            <option value="Toulouse">Toulouse</option>
+          </select>
+
+          <label for="date_fld">Date du concert</label>
+          <input type="date" name="date_fld" id="date_fld" />
+
+          <label for="nbre_fld">Nombre de tickets</label>
+          <input type="number" name="nbre_fld" id="nbre_fld" />
+        </form>
+        <form action="#" method="post">
+          <h2>Créer un compte</h2>
+          <label for="login_fld">Login</label>
+          <input type="text" name="login_fld" id="login_fld" />
+
+          <label for="password_fld">Mot de passe</label>
+          <input type="password" name="password_fld" id="password_fld" />
+        </form>
+      </section>
+
+      <button type="cancel" class="btn">Annuler</button>
+      <button type="Submit" class="btn">Commander</button>
+    </main>
+
+    <footer>
+      <section>
+        <h1>Contact</h1>
+        <a href="tel:+498245256">O498/245.256</a>
+        <a href="mailto:info@orelsan7th.com">info@orelsan7th.com</a>
+      </section>
+      <section>
+        <h1>Prochaines dates de tournée</h1>
+        <ul>
+          <li>5 janvier - Paris</li>
+          <li>28 janvier - Bruxelles</li>
+          <li>5 février - Lille</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Navigation</h1>
+        <nav>
+          <a href="Index.html"> Accueil</a>
+          <a href="album.html">Les albums</a>
+          <a href="reservation.html">Réservation</a>
+        </nav>
+      </section>
+    </footer>
+  </body>
+</html>
