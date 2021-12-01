@@ -15,12 +15,12 @@
         <a href="reservation.html">Réservation</a>
       </nav>
     </header>
-    <aside>
-      <a href="www.instagram.com"></a>
-      <a href="www.twitter.com"></a>
-      <a href="www.facbook.com"></a>
-    </aside>
     <main>
+      <aside>
+        <a href="https://twitter.com"><i class="icofont-twitter"></i></a>
+        <a href="https://facbook.com"><i class="icofont-facebook"></i></a>
+        <a href="https://instagram.com"><i class="icofont-instagram"></i></a>
+      </aside>
       <section>
         <h1>Les Dates</h1>
         <div>
@@ -49,31 +49,31 @@
               <td>25 janvier 2018</td>
               <td>Bruxelles</td>
               <td>oui</td>
-              <td>Tickets</td>
+              <td class="tickets">Tickets</td>
             </tr>
             <tr>
               <td>8 fevrier 2018</td>
               <td>Lille</td>
               <td>non</td>
-              <td>Tickets</td>
+              <td class="tickets">Tickets</td>
             </tr>
             <tr>
               <td>9 fevrier 2018</td>
               <td>Caen</td>
               <td>oui</td>
-              <td>Tickets</td>
+              <td class="tickets">Tickets</td>
             </tr>
             <tr>
               <td>12 février 2018</td>
               <td>Marseille</td>
               <td>oui</td>
-              <td>Tickets</td>
+              <td class="tickets">Tickets</td>
             </tr>
             <tr>
               <td>14 février 2018</td>
               <td>Toulouse</td>
               <td>oui</td>
-              <td>Tickets</td>
+              <td class="tickets">Tickets</td>
             </tr>
           </tbody>
         </table>
@@ -81,8 +81,8 @@
       <section>
         <h1>Réservation</h1>
         <form action="#" method="post">
-          <h2>Coordonnées</h2>
-          <label for="name_fld">Nom</label>
+          <h2 class="reservation">Coordonnées</h2>
+          <label for="name_fld">Nom*</label>
           <input
             required="required"
             type="text"
@@ -90,11 +90,17 @@
             id="name_fld"
           />
 
-          <label for="first_name_fld">Prénom</label>
-          <input type="text" name="first_name_fld" id="first_name_fld" />
-
-          <label for="mail_fld">E-mail</label>
+          <label for="first_name_fld">Prénom*</label>
           <input
+            required="required"
+            type="text"
+            name="first_name_fld"
+            id="first_name_fld"
+          />
+
+          <label for="mail_fld">E-mail*</label>
+          <input
+            required="required"
             type="email"
             name="mail_fld"
             id="mail_fld"
@@ -105,10 +111,10 @@
           <input type="tel" name="phone_fld" id="phone_fld" />
         </form>
         <form action="#" method="post">
-          <h2>Votre Ticket</h2>
-          <label for="ville_fld">Ville</label>
+          <h2 class="reservation">Votre Ticket</h2>
+          <label for="ville_fld">Ville*</label>
 
-          <select name="city_fld" id="city_fld">
+          <select required="required" name="city_fld" id="city_fld">
             <option value="Paris">Paris</option>
             <option value="Bruxelles">Bruxelles</option>
             <option value="Lille">Lille</option>
@@ -117,14 +123,27 @@
             <option value="Toulouse">Toulouse</option>
           </select>
 
-          <label for="date_fld">Date du concert</label>
-          <input type="date" name="date_fld" id="date_fld" />
+          <label for="date_fld">Date du concert*</label>
+          <input
+            required="required"
+            type="date"
+            name="date_fld"
+            id="date_fld"
+          />
 
-          <label for="nbre_fld">Nombre de tickets</label>
-          <input type="number" name="nbre_fld" id="nbre_fld" />
+          <label for="nbre_fld">Nombre de tickets*</label>
+          <input
+            required="required"
+            type="number"
+            name="nbre_fld"
+            id="nbre_fld"
+            max="10"
+            value="0"
+            min="0"
+          />
         </form>
         <form action="#" method="post">
-          <h2>Créer un compte</h2>
+          <h2 class="reservation">Créer un compte</h2>
           <label for="login_fld">Login</label>
           <input type="text" name="login_fld" id="login_fld" />
 

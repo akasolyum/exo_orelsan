@@ -1,0 +1,15 @@
+body {
+  header {
+    width: 100%;
+    height: 80px;
+    background: url(/img/fond_heade.jpg) no-repeat center;
+    background-size: cover;
+
+    > nav {
+      max-width: 980px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 1em;
+    }
+  }
+}
