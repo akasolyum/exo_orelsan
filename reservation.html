@@ -83,8 +83,9 @@
       </section>
       <section>
         <h1>Réservation</h1>
-        <h3 class="reservation">Coordonnées</h3>
         <form action="#" method="post">
+          <h3 class="reservation">Coordonnées</h3>
+
           <label for="name_fld">Nom*</label>
           <input
             required="required"
@@ -112,9 +113,10 @@
 
           <label for="phone_fld">Téléphone</label>
           <input type="tel" name="phone_fld" id="phone_fld" />
-        </form>
+         
         <h3 class="reservation">Votre Ticket</h3>
-        <form action="#" method="post">
+
+        
           <label for="ville_fld">Ville*</label>
 
           <select required="required" name="city_fld" id="city_fld">
@@ -144,19 +146,21 @@
             value="0"
             min="0"
           />
-        </form>
+        
         <h3 class="reservation">Créer un compte</h3>
-        <form action="#" method="post">
+
+        
           <label for="login_fld">Login</label>
           <input type="text" name="login_fld" id="login_fld" />
 
           <label for="password_fld">Mot de passe</label>
           <input type="password" name="password_fld" id="password_fld" />
+          
+          <button type="cancel" class="btn_form">Annuler</button>
+          <button type="Submit" class="btn_form">Commander</button>
         </form>
       </section>
 
-      <button type="cancel" class="btn_form">Annuler</button>
-      <button type="Submit" class="btn_form">Commander</button>
     </main>
 
     <footer>
