@@ -7,19 +7,45 @@ main.album {
     max-width: $max_with2;
     width: 100%;
     margin-bottom: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    h1 {
+      text-align: center;
+    }
   }
-  > section.image {
+  > section.left {
     max-width: $max_with2;
     width: 100%;
     margin-bottom: 0.5rem;
-    display: flex;
+    float: right;
+    // display: flex;
+
+    h1 {
+      text-align: left;
+    }
 
     > img {
       height: 150px;
+      padding: 1rem;
+      margin-right: 1rem;
       float: left;
+    }
+  }
+  > section.right {
+    max-width: $max_with2;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    float: right;
+    // display: flex;
+
+    h1 {
+      text-align: left;
+    }
+
+    > img {
+      height: 150px;
+      padding: 1rem;
+      margin-right: 1rem;
+      float: right;
     }
   }
 }
