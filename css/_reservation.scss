@@ -1,78 +1,92 @@
-.reservation {
-  color: $color_red;
-}
-
-.btn {
-  border: 0.01em solid $color_red;
-  color: $color_red;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
 .btn_form {
   border: 0.01em solid $color_red;
   color: $color_red;
 }
-
 section.date {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+main.reserv {
+  section {
+    form {
+      div.formu {
+        gap: 0 !important;
+        display: flex;
+        align-items: center;
+      }
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      label {
+        width: 200px;
+        text-align: right;
+      }
+      input {
+        padding: 0;
+        margin: 0.5em;
+
+        max-height: 1.5em;
+      }
+      select {
+        padding: 0;
+        margin: 0.5em;
+        width: 145px;
+        max-height: 1.5em;
+      }
+      #date_fld {
+        text-align: center;
+        font-family: "Montserrat";
+        font-weight: normal;
+        width: 145px;
+      }
+    }
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+  div {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5em;
+
+    table {
+      border-spacing: 1em;
+
+      td {
+        text-align: start;
+        font-family: "Montserrat";
+        font-weight: normal;
+      }
+    }
+    article {
+      a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        &:hover {
+          color: $color_red;
+        }
+      }
+      h2 {
+        margin: 0;
+      }
+    }
+  }
+  h3.reservation {
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+  }
 }
 
-form label {
-  display: block;
-
-  text-align: right;
+html{
+  background-color: red;
 }
-
-input {
-  padding: 0;
-  margin: 0;
-
-  max-height: 1.5em;
-}
-
-select {
-  padding: 0;
-  margin: 0;
-
-  max-height: 1.5em;
-}
-
-h3.reservation {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 25%;
-}
-
-table td {
-  text-align: center;
-}
-
-div {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 5em;
-}
-
-div > article a {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-}
-div > article h2 {
-  margin: 0;
-  
-}
-
-/* html {
-  background-color: navy;} */
