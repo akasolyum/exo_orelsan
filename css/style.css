@@ -23,8 +23,6 @@ body footer div section ul li { text-align: center; list-style: none; color: whi
 
 .reservation { color: #a00b0b; }
 
-.btn { border: 0.01em solid #a00b0b; color: #a00b0b; padding-left: 1em; padding-right: 1em; }
-
 .btn_form { border: 0.01em solid #a00b0b; color: #a00b0b; }
 
 section.date { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
@@ -37,17 +35,20 @@ input { padding: 0; margin: 0; max-height: 1.5em; }
 
 select { padding: 0; margin: 0; max-height: 1.5em; }
 
-h3.reservation { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; margin-left: 25%; }
+h3.reservation { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; margin-left: 15%; }
 
-table td { text-align: center; }
+table td { text-align: center; font-family: "Montserrat"; font-weight: normal; }
 
 div { display: -webkit-box; display: -ms-flexbox; display: flex; margin-left: auto; margin-right: auto; gap: 5em; }
 
-div > article a { text-decoration: none; color: inherit; display: -webkit-box; display: -ms-flexbox; display: flex; }
+div article a { text-decoration: none; color: inherit; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-div > article h2 { margin: 0; }
+div article a:hover { color: #a00b0b; }
 
-/* html { background-color: navy;} */
+div article h2 { margin: 0; }
+
+#date_fld { text-align: center; font-family: "Montserrat"; font-weight: normal; }
+
 main.index { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 main.index section { margin-top: 2%; }
@@ -101,6 +102,10 @@ body label { color: black; font-family: "Montserrat"; font-weight: normal; text-
 body a { font-family: "Montserrat"; font-weight: normal; }
 
 body p { font-family: "Montserrat"; font-weight: normal; }
+
+body .btn { border: 0.01em solid #a00b0b; color: #a00b0b; padding-left: 1em; padding-right: 1em; }
+
+body .btn:hover { background-color: #a00b0b; color: white; }
 
 main aside { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; position: fixed; bottom: 10vh; right: 0; }
 

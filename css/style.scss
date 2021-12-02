@@ -48,6 +48,16 @@ body {
     font-family: "Montserrat";
     font-weight: normal;
   }
+  .btn {
+    border: 0.01em solid $color_red;
+    color: $color_red;
+    padding-left: 1em;
+    padding-right: 1em;
+    &:hover {
+      background-color: $color_red;
+      color: white;
+    }
+  }
 }
 
 //ASSIDE

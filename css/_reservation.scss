@@ -2,13 +2,6 @@
   color: $color_red;
 }
 
-.btn {
-  border: 0.01em solid $color_red;
-  color: $color_red;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
 .btn_form {
   border: 0.01em solid $color_red;
   color: $color_red;
@@ -50,11 +43,15 @@ select {
 h3.reservation {
   display: flex;
   justify-content: flex-start;
-  margin-left: 25%;
+  margin-left: 15%;
 }
 
-table td {
-  text-align: center;
+table {
+  td {
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: normal;
+  }
 }
 
 div {
@@ -62,16 +59,27 @@ div {
   margin-left: auto;
   margin-right: auto;
   gap: 5em;
+
+  article {
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      &:hover {
+        color: $color_red;
+      }
+    }
+    h2 {
+      margin: 0;
+    }
+  }
 }
 
-div > article a {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
+#date_fld {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: normal;
 }
-div > article h2 {
-  margin: 0;
-}
-
-/* html {
-  background-color: navy;} */
+//  html {
+//   background-color: navy;
+// }
