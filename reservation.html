@@ -85,7 +85,7 @@
         <h1>Réservation</h1>
         <form action="#" method="post">
           <h3 class="reservation">Coordonnées</h3>
-
+          <div class=formu>
           <label for="name_fld">Nom*</label>
           <input
             required="required"
@@ -93,7 +93,8 @@
             name="name_fld"
             id="name_fld"
           />
-
+        </div>
+        <div class=formu>
           <label for="first_name_fld">Prénom*</label>
           <input
             required="required"
@@ -101,7 +102,8 @@
             name="first_name_fld"
             id="first_name_fld"
           />
-
+        </div>
+        <div class=formu>
           <label for="mail_fld">E-mail*</label>
           <input
             required="required"
@@ -110,13 +112,14 @@
             id="mail_fld"
             placeholder="me@domaine.be"
           />
-
+        </div>
+          <div class=formu>
           <label for="phone_fld">Téléphone</label>
           <input type="tel" name="phone_fld" id="phone_fld" />
-         
+        </div>
           <h3 class="reservation">Votre Ticket</h3>
 
-        
+          <div class=formu>
           <label for="ville_fld">Ville*</label>
 
           <select required="required" name="city_fld" id="city_fld">
@@ -127,7 +130,8 @@
             <option value="Marseille">Marseille</option>
             <option value="Toulouse">Toulouse</option>
           </select>
-
+        </div>
+          <div class=formu>
           <label for="date_fld">Date du concert*</label>
           <input
             required="required"
@@ -135,7 +139,8 @@
             name="date_fld"
             id="date_fld"
           />
-
+        </div>
+          <div class=formu>
           <label for="nbre_fld">Nombre de tickets*</label>
           <input
             required="required"
@@ -146,18 +151,22 @@
             value="0"
             min="0"
           />
+        </div>
         
           <h3 class="reservation">Créer un compte</h3>
 
-        
+          <div class=formu>
           <label for="login_fld">Login</label>
           <input type="text" name="login_fld" id="login_fld" />
-
+        </div>
+          <div class=formu>
           <label for="password_fld">Mot de passe</label>
           <input type="password" name="password_fld" id="password_fld" />
-          
+        </div>
+        <div class=btn_formu>
           <button type="cancel" class="btn_form">Annuler</button>
           <button type="Submit" class="btn_form">Commander</button>
+        </div>
         </form>
       </section>
 

@@ -11,8 +11,14 @@ section.date {
 main.reserv {
   section {
     form {
+      margin-top: -2em;
       div.formu {
         gap: 0 !important;
+        display: flex;
+        align-items: center;
+      }
+      div.btn_formu{
+        gap: 0.5em !important;
         display: flex;
         align-items: center;
       }
@@ -82,7 +88,31 @@ main.reserv {
   }
   h3.reservation {
     display: flex;
-    justify-content: flex-start;
-    width: 20%;
+    align-self: center;
+                position: relative;
+                background-color: white;
+                font-weight: 300;
+                color: $color-red;
+                text-transform: capitalize;
+                letter-spacing: 5px;
+                padding: 0.5em;
+
   }
+    
+  h3.reservation:before, 
+  h3.reservation:after { 
+    content: "";
+    background-color: #464D57;
+    opacity: 0.8;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -15%;
+    height: 1px;
+    width: 420px;
+    flex: 1;
+    z-index: -1;
+     
+    } 
+  
 }
