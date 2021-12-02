@@ -35,7 +35,7 @@ input { padding: 0; margin: 0; max-height: 1.5em; }
 
 select { padding: 0; margin: 0; max-height: 1.5em; }
 
-h3.reservation { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; margin-left: 15%; }
+h3.reservation { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; margin-left: -33%; }
 
 table td { text-align: center; font-family: "Montserrat"; font-weight: normal; }
 
