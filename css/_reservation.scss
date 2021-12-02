@@ -75,8 +75,10 @@ main.reserv {
     article {
       a {
         text-decoration: none;
+        width: 175px;
         color: inherit;
         display: flex;
+        
         &:hover {
           color: $color_red;
         }
@@ -97,9 +99,7 @@ main.reserv {
                 letter-spacing: 5px;
                 padding: 0.5em;
 
-  }
-    
-  h3.reservation:before, 
+  } 
   h3.reservation:after { 
     content: "";
     background-color: #464D57;
